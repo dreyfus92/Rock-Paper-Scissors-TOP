@@ -4,18 +4,18 @@ function computerPlay() {
     let min = 1;
     let computerResult = Math.floor(Math.random()*(max-min+1)+min);
     if (computerResult == 1) {
-        return 'Rock';
+        return 'rock';
     }
     else if (computerResult == 2) {
-        return 'Paper';
+        return 'paper';
     }
     else{
-        return 'Scissors';
+        return 'scissors';
     }  
 }
 
 function playRound() {
-    let playerSelection = prompt('Choose Rock, Paper or Scissors:').toLowerCase();
+    let playerSelection = prompt('Choose rock, paper or scissors:').toLowerCase();
     let computerSelection = computerPlay().toLowerCase();
     console.log('Player chooses' + ' ' + playerSelection + '.');
     console.log('Computer chooses' + ' ' + computerSelection + '.');
